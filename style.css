@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -160,7 +164,7 @@ body {
 
 .projects-section {
     margin-top: 24rem;
-    background: #1B1B1B;
+    background: black;
     padding: 3rem;
 }
 
@@ -227,7 +231,31 @@ body {
   .display-projects div .figure-project {
     border-radius: 24px;
     background: #F2F2F2;
-    padding: 12rem;
+    padding: 9.8rem;
+    white-space: nowrap;
+  }
+
+  .carousel-bottom-container {
+    margin-top: 2rem;
+    background: black;
+  }
+
+  .tech-carousel-list {
+    padding: 2.5rem;
+    white-space: nowrap;
+    display: flex;
+    gap: 4rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    animation: 15s carouselSlide linear infinite;
+  }
+
+  .tech-carousel-list .carousel-tech {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    animation: 60s carouselSlide linear infinite;
   }
 
 /*Media Screen mobile desktop*/
