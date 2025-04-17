@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2; 
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+.carousel-top-container {
+    white-space: nowrap;
+    overflow: hidden;
+    background: #FFFF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.items-carousel-list {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: space-between;
+    animation: carouselSlide 35s linear infinite;
+}
+
+.carousel-item {
+    font-size: 16px;
+    color: #1B1B1B;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel-item:first-child {
+    font-weight: 600;
+}
+
+.carousel-item:last-child {
+    font-weight: 600;
+}
+
+@keyframes carouselSlide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*Particles JS*/
+
+.main-content {
+    position: relative;
+    z-index: 10;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: -50;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-items {
+    display: none;
+}
+
+/*Sessão Home*/
+
+.home {
+    margin-top: 14rem;
+}
+
+.cta-article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.title-cta {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 68px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 70px
+}
+
+.description-cta {
+    max-width: 800px;
+    text-align: center;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-about {
+    background: black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem; 
+    border-radius: 12px;
+}
+
+.btn-about a {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+}
+
+.btn-projects {
+    background: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 12px;
+}
+
+.btn-projects a {
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .home {
+        padding: 1.2rem;
+    }
+
+    .title-cta {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
