@@ -457,6 +457,123 @@ body {
     background-color: #333;
   }
 
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 998;
+  }
+  
+  .modal-overlay.active {
+    display: block;
+  }
+  
+  .form-container-modal {
+    z-index: 999;
+  }
+
+  .container-modal {
+    position: relative;
+    z-index: 999;
+  }
+  
+  .form-container-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    width: 50%;
+    border-radius: 24px;
+    display: none;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-container-modal.active {
+    display: flex;
+  }
+  
+  .form-container {
+    width: 100%;
+  }
+  
+  .form {
+    padding: 3rem;
+    border-radius: 24px;
+    background: black;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .form-container form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .close-btn i {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+  }
+  
+
+  label {
+    color: white;
+    font-size: 12px;
+  }
+  
+  input,
+  textarea {
+    outline: none;
+    background: transparent;
+    border: 1px solid #C3C3C3;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Botão */
+  form button {
+    padding: 0.5rem;
+    border-radius: 12px;
+    color: black;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+  }
+  
+  form button:hover {
+    background: #f2f2f2;
+  }
+
+  .paragraph {
+    color: rgb(47, 202, 112);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 12px;
+  }
+
   /*Footer section*/
 
   .footer-section {
@@ -614,7 +731,12 @@ body {
         font-size: 0.95rem;
       }
 
-      
+      /*Form container*/
+
+      .form-container-modal {
+        width: 85%;
+        height: 85%;
+      }
 
       /*Footer section*/
 

@@ -179,7 +179,8 @@
                 Time line
             </nav>
         </section>
-        <section id="contact" class="contact-section">
+        <section id="contact">
+          <div class="contact-section">
             <div class="content-contact">
               <div class="content-contact-cta">
                 <p>Entre em</p>
@@ -193,10 +194,46 @@
                 </p>
               </div>
               <div class="content-contact-button">
-                <button type="button">Formulário</button>
+                <button id="modal-form-btn" type="button">Formulário</button>
               </div>
             </div>
-          </section>
+          </div>
+
+          <div class="container-modal">
+            <div class="modal-overlay" id="modal-overlay"></div>
+            <div class="form-container-modal" id="form-modal-container">
+              <figure class="form-container">
+                <div class="form">
+                  <form id="form-modal">
+                    <div class="close-btn">
+                      <i id="close-modal" class="fa fa-times"></i>
+                    </div>
+                    <div>
+                      <label for="name">Nome</label>
+                      <input required type="text" id="name" placeholder="Digite seu nome...">
+                    </div>
+                    <div>
+                      <label for="email">E-mail</label>
+                      <input required type="email" id="email" placeholder="jhonDoe@example.com">
+                    </div>
+                    <div>
+                      <label for="message">Mensagem</label>
+                      <textarea required name="message" id="message" rows="6"></textarea>
+                    </div>
+                    <div>
+                      <label for="vacation">Profissão</label>
+                      <input required type="text" id="vacation" placeholder="Digite sua profissão...">
+                    </div>
+                    <div>
+                      <button id="button-submit" type="submit">Enviar</button>
+                      <p class="paragraph"></p>
+                    </div>
+                  </form>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
     </main>
     <footer class="footer-section">
       <div class="footer-container">
