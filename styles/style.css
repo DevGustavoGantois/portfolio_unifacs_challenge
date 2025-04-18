@@ -316,6 +316,20 @@ body {
     background: #F2F2F2;
     padding: 9.8rem;
     white-space: nowrap;
+    transition: 0.6s ease-in;
+    position: relative;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+
+  }
+
+  .display-projects div .figure-project:hover {
+    background: #1F19E0;
+    transform: translateY(-10%);
+    color: white;
+    font-size: 18px;
+    filter: drop-shadow(0px 0px 22px #1F19E0);
+    border: 1px solid #1b1b1b;
   }
 
   .carousel-bottom-container {
