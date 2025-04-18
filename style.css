@@ -127,6 +127,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    font-size: 18px;
 }
 
 .btn-about {
@@ -141,7 +142,7 @@ body {
 .btn-about a {
     color: #FFFFFF;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .btn-projects {
@@ -150,6 +151,7 @@ body {
     padding-bottom: 0.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    font-size: 18px;
     border-radius: 12px;
 }
 
@@ -322,6 +324,10 @@ body {
     gap: 8px;
 }
 
+.button-content-about button a {
+    font-size: 18px;
+}
+
 /*Contact section*/
 
 .contact-section {
@@ -371,6 +377,7 @@ body {
     border-radius: 12px;
     font-family: "Bebas Neue", sans-serif;
     cursor: pointer;
+    font-size: 18px;
     transition: background 0.3s;
   }
   
@@ -530,6 +537,10 @@ body {
       .content-contact-description p {
         font-size: 0.95rem;
       }
+
+      
+
+      /*Footer section*/
 
       .footer-container {
         flex-direction: column;
