@@ -25,4 +25,32 @@ Seção dedicada à minha trajetória pessoal/profissional, apresentada de forma
 
 📸 Prévia do Projeto
 
-![alt text](image.png)
+![alt text](images/image.png)
+
+
+EN
+
+🎓 Challenge 3 - Interactive Portfolio
+Welcome to the Challenge 3 repository, a project developed as part of my college course focused on practicing HTML, CSS and JavaScript in a creative and functional way. This portfolio highlights my skills and trajectory in an elegant, modern and responsive way.
+
+🔧 Technologies and Resources Used
+✅ HTML, CSS and JavaScript
+The solid foundation of the application, ensuring structure, style and interactivity.
+
+🎨 Responsive Design
+Layout adapted to different screen sizes, providing a great experience on both mobile devices and desktops.
+
+⚫⚪ Black and White Palette
+Minimalist choice to highlight the content with an elegant and modern visual contrast.
+
+🧩 Particles.js
+Library used to create particle animations in the background of the website, adding dynamism and sophistication.
+
+🖱️ Hover Effects
+Visual interactions when hovering over buttons and links, making navigation more intuitive and enjoyable.
+
+🎭 Pseudo-elements ::before and ::after
+Subtle details added to the layout, enriching the aesthetics without compromising performance.
+
+🕒 Timeline
+Section dedicated to my personal/professional trajectory, presented in a chronological and visually attractive format.
