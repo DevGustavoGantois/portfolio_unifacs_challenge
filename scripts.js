@@ -31,3 +31,16 @@ overlay.addEventListener("click", () => {
 sendBtnForm.addEventListener("click", () => {
     alert("Esse formulário não vai pra lugar nenhum kkkk...")
 })
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('.timeline li').forEach(el => {
+    el.classList.add('hidden');
+    observer.observe(el);
+  });

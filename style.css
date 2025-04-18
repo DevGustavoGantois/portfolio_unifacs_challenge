@@ -409,15 +409,17 @@ body {
     font-size: 18px;
 }
 
-/* Time line section */
-
 .content-info-timeLine {
-    margin-top: 120px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    gap: 4px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content-info-timeLine p {
+    text-align: center;
+    padding: 1rem;
 }
 
 .content-info-timeLine h1 {
@@ -425,10 +427,111 @@ body {
     font-size: 40px;
 }
 
-/*Time line*/
+/* Linha do tempo geral */
 .timeLine-content {
-     
-}
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 40px 20px;
+  }
+
+  .event-content h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+  }
+  
+  .timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #ccc;
+  }
+  
+  .timeline li {
+    position: relative;
+    margin: 40px 0;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+  
+  .timeline li:hover {
+    transform: scale(1.03);
+  }
+  
+  .timeline li::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background:rgb(0, 0, 0);
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 4px #ccc;
+    z-index: 1;
+  }
+  
+  .timeline li:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline li:nth-child(odd)::before {
+    right: -10px;
+  }
+  
+  .timeline li:nth-child(even) {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .timeline li:nth-child(even)::before {
+    left: -10px;
+  }
+  
+  .timeline li time {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #888;
+  }
+  
+  .event-content {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .timeline li:hover .event-content {
+    background: #f0f0f0;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 /*Contact section*/
 
@@ -709,7 +812,7 @@ body {
     }
 
     .display-projects div .figure-project {
-        padding: 8rem;
+        padding: 7rem;
     }
 
     .display-projects div .figure-project p {
@@ -747,6 +850,16 @@ body {
         align-items: center;
         justify-content: center;
         gap: 8px;
+    }
+
+    /*TimeLine section*/
+    .event-content {
+        padding: 12px;
+    }
+
+    .event-content p {
+        font-size: 14px;
+        margin-top: 8px;
     }
 
     /*Contact section*/
