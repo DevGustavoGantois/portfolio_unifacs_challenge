@@ -409,6 +409,27 @@ body {
     font-size: 18px;
 }
 
+/* Time line section */
+
+.content-info-timeLine {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.content-info-timeLine h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+}
+
+/*Time line*/
+.timeLine-content {
+     
+}
+
 /*Contact section*/
 
 .contact-section {
